@@ -15,10 +15,7 @@ import onlineshoppingapplication.enums.UserRole;
 @NoArgsConstructor
 public class UserRequest {
 	
-	@NotNull(message = "username cannot be null")
-	@NotBlank(message = "username cannot be blank")
-	@Pattern(regexp = "^[a-zA-Z]+$", message = "Name should only contain alphabetic characters")
-	private String username;
+	
 	
 	@Email(regexp = "[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+\\.[a-z]{2,}", message = "invalid email ")
 	private String email;
