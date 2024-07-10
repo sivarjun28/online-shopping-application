@@ -1,32 +1,27 @@
 package com.jsp.onlineshoppingapplication.util;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
-
-
-public class SimpleStructure<T> {
+public class SimpleStructure {
 	
-private int status;
-private String message;
-
-public String getMessage() {
-	return message;
-}
-
-public SimpleStructure<T> setMessage(String message) {
-	this.message = message;
-	return this;
+	private int status;
+	private String message;
 	
-}
-
-public int getStatus() {
-	return status;
-}
-
-public SimpleStructure<T> setStatus(int status) {
-	this.status = status;
-	return this;
-}
+	public int getStatus() {
+		return status;
+	}
+	public SimpleStructure setStatus(int status) {
+		this.status = status;
+		return this;
+	}
+	public String getMessage() {
+		return message;
+	}
+	public SimpleStructure setMessage(String message) {
+		this.message = message;
+		return this;
+	}
+	
+	
+	
+	
 
 }
